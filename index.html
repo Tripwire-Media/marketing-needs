@@ -13,7 +13,7 @@
         <style type="text/css">
             h1 {
                 background-color: darkorange;
-                font-size: 40px;
+                font-size: 34px;
                 color: black;
                 font-style: normal;
                 font-weight: bold;
@@ -25,16 +25,16 @@
             form {
 
                 font-size: medium;
-                margin: 8px;
-                line-height: 25px;
+                margin: 4px;
+                line-height: 1.5rem;
                 display: block;
 
             }
 
             label,
             input {
-                line-height: 45px;
-                padding-left: 9px;
+
+                padding-left: 1.5rem;
             }
 
             p {
@@ -47,17 +47,17 @@
 
             body {
                 font-family: DINOT-Medium, serif;
-                margin: 25px;
-                border: 25px;
-                padding-right: 4rem;
-                padding-left: 4rem;
+                border: 5px;
+                padding-left: 1.5rem;
             }
 
             canvas {
-                background-image: url('');
+                background-image: url(' ');
                 background-repeat: no-repeat;
                 background-position: center; 
                 background-size: contain;
+
+                width: 100%;
 
             }
 
@@ -70,7 +70,7 @@
         */
 
             hr {
-                margin: 45px;
+                margin: 2rem;
             }
         </style>
     </head>
@@ -315,7 +315,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
-  <div style= "width: 800px; height: 800px;">
+  <div style= "width: 100%">
         <canvas id="radarchart">
         </div>
 
@@ -415,6 +415,8 @@
                 label: "Marketing Coverage",
                 backgroundColor: "rgba(252,175,22,.4)",
                 borderColor: "RGBa(150,10,10,.5)",
+                borderWidth: "2",
+                lineTension: ".02",
                 pointBackgroundColor: "#fcaf16",
                 pointBorderColor: "#fff",
                 pointHoverBackgroundColor: "rgba(252,175,22,1)",
