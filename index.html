@@ -3,6 +3,9 @@
 
 <html lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 <title>Marketing Needs Analysis</title>
 
 <head>
@@ -87,6 +90,7 @@
             margin: 2rem;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 </head>
 
 <body>
@@ -102,11 +106,13 @@
 
     <form>
 
+
         </br>
         <h3>Awareness</h3>
         <!-- Question 1-->
 
-        <H4><b>Q1</b> - How would you rate the current level of of your brand/business with your target market?</H4>
+        <H4><b>Q1</b> - How would you rate the current level of awareness of your brand/business with your
+target market?</H4>
 
         <input id="s1-0" type="radio" name="question1" value="10" /><label for="s1-0">10</label>
         <input id="s3-0" type="radio" name="question1" value="30" /><label for="s3-0">30</label>
@@ -326,26 +332,30 @@
         <input id="s9-15" type="radio" name="question15" value="90" /><label for="s9-15">90</label>
         <input id="s10-15" type="radio" name="question15" value="100" /><label for="s10-15">100</label></br>
         <hr>
+    
     </form>
     </br>
+
     <h1>Marketing Coverage Chart</h1>
     <p>Your results have dynamically plotted within the radar chart below.</p>
     <p>The connected dots graphically expose gaps or coverage
         that should help identify any key areas that require focus on for improving your video
         marketing strategy.</p></br></br>
-
     <p>See <a href="#example">some examples</a> below for a couple chart examples that outline ways to read
         your results</p></br></br></br>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+
 
     <div style="width: 800px; height: 800px; margin: 5px;">
         <canvas id="radarchart">
     </div>
 
+
+
     <img src="examples.jpg" id="example" width="800px">
 
-
+    
     <script>
         //----Question 1
         // Select all of the radio options for "question1"
@@ -431,9 +441,7 @@
 
         var ctx = document.getElementById("radarchart");
         var data = {
-            labels: ['Exposure', '', '', '', '', '', '',
-                '', '', '', '', '', '',
-                '', 'Q15'
+            labels: ['', '', '', '', '', '', '','', '', '', '', '', '', '', ''
             ],
             datasets: [{
                 label: "Marketing Coverage",
@@ -605,5 +613,7 @@
             option.addEventListener('change', updateChart);
         });
     </script>
+
 </body>
+
 </html>
